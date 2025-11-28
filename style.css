@@ -1,0 +1,459 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #F5EBDC;
+}
+
+/* ===== HEADER ===== */
+header{
+  padding: 25px;
+  border-bottom: 2px solid #EBA410;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.nav{
+  display: flex;
+  gap: 30px;
+}
+
+li{
+  list-style: none;
+}
+
+li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  transition: 0.3s;
+  font-weight: bolder;
+  transition: border-bottom-color 0.3s ease;
+}
+
+li a:hover{
+  color: #EBA410;
+  border-bottom: 2px solid #EBA410;
+}
+
+.logo-burgue{
+  cursor: pointer;
+}
+
+.logo-burgue span{
+  color: #EBA410;
+}
+
+.vazio{
+  width: 150px;
+}
+
+/* ===== BANNER PRINCIPAL ===== */
+.container-prin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 453px;
+  width: 100%;
+  background-image: url(./src/burgue2.png);
+}
+
+.logo-main h2{
+  font-size: 150px;
+  color: #ffff;
+}
+
+.logo-main span{
+  color: #EBA410;
+}
+
+/* ===== SEÇÃO PRINCIPAL COM IMAGEM E TEXTO ===== */
+.container-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 40px;
+  gap: 50px;
+  border-bottom: 2px solid #EBA410;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.burgue-main{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.burgue-img{
+  width: 100%;
+  max-width: 45rem;
+  height: auto;
+  background-color: #EBA410;
+  border-radius: 40px 100px;
+}
+
+.ph-main{
+  flex: 1;
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ph-main h2{
+  font-size: 70px;
+  line-height: 1.1;
+}
+
+.ph-main span{
+  color: #EBA410;
+}
+
+.ph-main p{
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: normal;
+}
+
+.button-now button{
+  background-color: #EBA410;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-now button:hover{
+  background-color: #FE8824;
+}
+
+/* ===== CARDÁPIO ===== */
+.cardapio-main{
+  padding: 50px 20px;
+}
+
+.cardapio-main h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.box-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 50px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.items{
+  background-color: #F2E5D4;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.items:hover{
+  background-color: #c0b4a5;
+  transform: translateY(-5px);
+}
+
+.items img{
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.items h3 {
+  font-size: 2rem;
+  margin: 15px 0 10px;
+}
+
+.items p{
+  font-size: 15px;
+  font-style: oblique;
+  margin-bottom: 10px;
+}
+
+.items span{
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background-color: #EBA410;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+
+footer p{
+  color: #fff;
+  font-weight: bolder;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+footer p:hover{
+  color: #646464;
+}
+
+/* ========================================
+   MEDIA QUERIES - RESPONSIVIDADE
+   ======================================== */
+
+/* ===== TABLETS (até 1024px) ===== */
+@media (max-width: 1024px) {
+  
+  /* Ajusta tamanho do banner */
+  .container-prin {
+    height: 350px;
+    padding: 30px;
+  }
+  
+  .logo-main h2{
+    font-size: 100px;
+  }
+  
+  /* Ajusta seção principal */
+  .container-main{
+    padding: 60px 30px;
+    gap: 40px;
+  }
+  
+  .burgue-img{
+    max-width: 35rem;
+  }
+  
+  .ph-main h2{
+    font-size: 50px;
+  }
+  
+  /* Cardápio com 3 colunas */
+  .box-grid{
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px 20px;
+  }
+}
+
+/* ===== TABLETS PEQUENOS (até 768px) ===== */
+@media (max-width: 768px) {
+  
+  /* Header vira coluna */
+  header {
+    padding: 15px;
+  }
+  
+  .logo-burgue h1{
+    font-size: 25px;
+  }
+  
+  .container{
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .vazio{
+    display: none; /* Remove espaço vazio no mobile */
+  }
+  
+  .nav{
+    gap: 20px;
+  }
+  
+  /* Banner menor */
+  .container-prin {
+    height: 250px;
+    padding: 20px;
+  }
+  
+  .logo-main h2{
+    font-size: 60px;
+  }
+  
+  /* Seção principal vira coluna */
+  .container-main{
+    flex-direction: column; /* Texto aparece primeiro */
+    padding: 40px 20px;
+    gap: 30px;
+    
+  }
+  
+  .burgue-img{
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .ph-main h2{
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .ph-main p{
+    text-align: justify;
+    font-size: 0.95rem;
+  }
+  
+  .button-now{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-now button{
+    width: 100%;
+    max-width: 300px;
+    padding: 15px 30px;
+  }
+  
+  /* Cardápio com 2 colunas */
+  .cardapio-main h2{
+    font-size: 40px;
+  }
+  
+  .box-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px 15px;
+  }
+  
+  .items h3{
+    font-size: 1.5rem;
+  }
+ 
+}
+
+/* ===== SMARTPHONES (até 480px) ===== */
+@media (max-width: 480px) {
+  
+  /* Header ainda mais compacto */
+  .logo-burgue h1{
+    font-size: 20px;
+  }
+  
+  .nav{
+    gap: 15px;
+  }
+  
+  li a{
+    font-size: 0.9rem;
+  }
+  
+  /* Banner muito menor */
+  .container-prin {
+    height: 140px;
+    padding: 15px;
+    display: none;
+  }
+  
+  .logo-main h2{
+    font-size: 40px;
+  }
+  
+  /* Texto menor */
+  .ph-main h2{
+    font-size: 32px;
+  }
+  
+  .ph-main p{
+    font-size: 0.9rem;
+  }
+  
+  /* Cardápio com 1 coluna */
+  .cardapio-main h2{
+    font-size: 32px;
+  }
+  
+  .box-grid{
+    grid-template-columns: 1fr;
+    padding: 20px 10px;
+  }
+  
+  .items{
+    padding: 15px;
+  }
+  
+  .items img{
+    max-width: 200px;
+  }
+  
+  .items h3{
+    font-size: 1.3rem;
+  }
+  
+  /* Footer */
+  footer p{
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+/* ===== SMARTPHONES MUITO PEQUENOS (até 360px) ===== */
+@media (max-width: 360px) {
+  
+  .logo-burgue h1{
+    font-size: 18px;
+  }
+  
+  .nav{
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .container-prin {
+    height: 150px;
+  }
+  
+  .logo-main h2{
+    font-size: 30px;
+  }
+  
+  .ph-main h2{
+    font-size: 28px;
+  }
+  
+  .cardapio-main h2{
+    font-size: 28px;
+  }
+}
