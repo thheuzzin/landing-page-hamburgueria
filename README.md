@@ -25,8 +25,6 @@ HTML5
 
 CSS3
 
-JavaScript (para navegação suave e interações simples)
-
 📌 Seções da Página
 🟧 Navbar
 
